@@ -1,0 +1,1 @@
+This is a collection of projects that have been created in CSE310
