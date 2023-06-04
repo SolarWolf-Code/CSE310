@@ -3,7 +3,7 @@
 This is a pretty simple P2P bridge between two addresses written in Golang. The idea is to
 be able to communicate with someone with just their IP
 
-[Software Demo Video](TODO)
+[Software Demo Video](https://youtu.be/dDOIa8qKoeQ)
 
 # Development Environment
 * IntelliJ Ultimate IDEA
