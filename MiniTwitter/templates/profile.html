@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Twitter - Profile</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <ul>
+            <li><a href="{{ url_for('profile') }}">Profile</a></li>
+            <li><a href="{{ url_for('feed') }}">Feed</a></li>
+            <li><a href="{{ url_for('discover') }}">Discover</a></li>
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2>{{ user[0] }}</h2>
+        <p>{{ user[1] }}</p>
+        <img src="{{ url_for('static', filename='images/' + user[2]) }}" alt="Profile Image" width="200" height="200">
+        <h3>Posts</h3>
+        {% for post in posts %}
+        <div class="post">
+            <p>{{ post[0] }}</p>
+            <p>{{ post[1] }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</body>
+</html>
