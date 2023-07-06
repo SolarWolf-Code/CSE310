@@ -6,7 +6,7 @@ MiniTwitter is a simple social media application built using Flask, a Python web
 
 ## Demo
 
-[Demo Video]()
+[Demo Video](https://youtu.be/503VNjYPDlM)
 
 ## Development Environment
 
